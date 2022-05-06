@@ -8,7 +8,7 @@ describe '#anagram?' do
     expect(words.compare).to(eq("Look, an anagram!"))
   end
   it('should return rejection if two inputted words are not anagrams') do
-    words = Anagrams.new("eat", "huh")
+    words = Anagrams.new("eat ", "east")
     expect(words.compare).to(eq("No anagram for you"))
   end
   it('should return true if two inputted words are anagrams even if in different cases') do
@@ -22,5 +22,9 @@ describe '#anagram?' do
   it('should check if inputs are antigrams') do
     words = Anagrams.new('Bus', 'diG')
     expect(words.compare).to(eq("Looks like you found and antigram!"))
+  end
+  it('should work with multi word sentances') do
+    words = Anagrams.new('The Morse Code', 'Here come dots!')
+    expect(words.compare).to(eq("Look, an anagram!"))
   end
 end
