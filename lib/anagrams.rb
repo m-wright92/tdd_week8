@@ -2,7 +2,7 @@ class Anagrams
   def initialize(string1, string2)
     @string1 = string1.downcase
     @string2 = string2.downcase
-    @vowels = 'aeio'
+    @vowels = 'aeiou'
   end
 
   def compare
