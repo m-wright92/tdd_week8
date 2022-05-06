@@ -14,6 +14,8 @@ class Anagrams
       else
         return false
       end
+    else
+      return "you need to input actual words"  
     end
   end
 end
