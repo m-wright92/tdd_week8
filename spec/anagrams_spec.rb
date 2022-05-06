@@ -11,4 +11,8 @@ describe '#anagram?' do
     words = Anagrams.new("eAt", "TeA")
     expect(words.compare).to(eq(true))
   end
+  it('should check if inputs are words containing vowels before checking for anagrams') do
+    words = Anagrams.new('twnk', 'bzrk')
+    expect(words.compare).to(eq("you need to input actual words"))
+  end
 end
