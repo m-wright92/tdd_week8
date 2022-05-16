@@ -18,7 +18,8 @@
 
 * Clone this repository
 * Run `bundle` in your terminal from within the root directory of this project
-* Run `ruby script.rb` in the terminal from the root directory
+* To check all passing test specs, run `rspec` in the terminal, this will test all files in the 'spec' directory.
+* Run `ruby script.rb` in the terminal from the root directory to interact with the function and see it in action.
 * Answer prompts given
 * This has only been tested in ruby 2.6.10, so it may not be compatible with older versions of ruby
 
